@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./src/js/rellax.js"></script>
 </head>
 <body>
 
@@ -18,8 +19,12 @@
         <i class="fas fa-bullseye"></i><a href="index.html">creeA</a>
     </span>
 
-    <div class="menu-icon">
-      <i class="fas fa-bars"></i>
+    <div id="wrapper">
+      <div class="menu-icon circle">
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+      </div>
     </div>
 
     <ul class="menu">
@@ -31,12 +36,34 @@
   </nav>
   
   <div class="hero">
-    <h1>We make your ideas become reality.</h1>
+    
+    <div class="rellax-effect rocks-2">
+      <img src="./src/images/rocks (2).png" alt="">
+    </div>
+    
+    <div class="rellax-effect rocks-1" data-rellax-speed="6">
+      <img src="./src/images/rocks (1).png" alt="">
+    </div>
+    
+    
+    <div class="rellax-effect rocks-3" data-rellax-speed="8">
+      <img src="./src/images/rocks (3).png" alt="">
+    </div>
+    
+    <div class="rellax-effect rocks-4" data-rellax-speed="2">
+      <!-- <img src="./src/images/rocks (4).png" alt=""> -->
+    </div>
+    
+    <h1 class="cursor anim-typing">We make your ideas become reality.</h1>
   </div>
 
+  <div class="scroll-down"></div>
+
+
   <div class="container">
+    <h2 class="project-text">work with smile</h2>
     <div class="project-section">
-      <div class="project1">1</div>
+      <div class="project1"></div>
       <div class="project2">2</div>
       <div class="project3">3</div>
       <div class="project4">4</div>

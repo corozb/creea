@@ -14,3 +14,15 @@ $(window).on("scroll", function() {
     $('nav').removeClass('black');
   }
 })
+
+// Menu burger
+$("#wrapper").click( function() {
+	$(".menu-icon").toggleClass("close");
+});
+
+// Parallax effects
+const rellax = new Rellax('.rellax-effect', {
+  callback: function(position){
+
+  }
+})
