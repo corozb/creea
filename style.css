@@ -535,10 +535,95 @@ height: 100%;
   color: transparent
 }
 
+/* --------------- FEATURE SECTION ----------- */
 
 .work-feature {
   display: grid;
-  background: gray
+  background: url(./src/images/yellow-background.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+}
+
+.work-container {
+  width: 90%;
+  max-width: 1349px; 
+  /* height: 800px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 43%;
+  grid-template-rows: 25% 1fr 1fr 5%;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+}
+
+.boxcard {
+  display: grid;
+  padding: 48px;
+  cursor: pointer;
+}
+
+.work-feature .title {
+  grid-column: 1/4;
+  text-align: center;
+  padding: 30px 20px;
+  height: 100%;
+  font-size: 20px
+}
+
+.work-feature .feat-1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: center;
+  border-right: 2px solid #2B333B;
+  border-bottom: 2px solid #2B333B;
+
+}
+
+.work-feature .feat-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  border-bottom: 2px solid #2B333B;
+
+}
+
+.work-feature .feat-3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  text-align: center;
+  border-right: 2px solid #2B333B;
+}
+
+.work-feature .feat-4 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  text-align: center;
+
+}
+
+.work-feature .feature-image {
+  grid-row: 2/4;
+  grid-column: 3/4;
+  text-align: center;
+
+}
+
+.single-feature i.fa, 
+.single-feature i.fas {
+  border: 2px solid #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 30px;
+  background: #23FEFF;
+  color: white;
+  transition: .3s ease;
+}
+
+.single-feature:hover i.fa, 
+.single-feature:hover i.fas {
+  border: 2px solid #23FEFF;
+  background: #2B333B;
+  color: #23FEFF
 }
 
 .team-section {
