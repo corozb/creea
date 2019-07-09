@@ -5,4 +5,4 @@ It's a personal project about a digital Agency called CREEA. This agency provide
 - Content
 - Branding
 
-[See it](https://corozb.github.io/creea/)
+You can [See it](https://corozb.github.io/creea/)
