@@ -317,8 +317,12 @@ p.scrollMe {
   top: 33%;
   left: 37.5%;
   font-size: 20px;
-  color: #fff;
   text-align: center;
+}
+
+.content a {
+  color: #fff;
+  text-decoration: none
 }
 
 .icon-projects {
@@ -379,7 +383,7 @@ p.scrollMe {
 }
 
 .content-p3 {
-  top: -42%;
+  top: -60%;
   left: 23%;
 }
 
@@ -445,18 +449,13 @@ p.scrollMe {
 
 .content-p6 {
   top: 25%;
-  left: 86%;
+  right: -200px;
 } 
 
 
 .project6:hover {
   background:#161355;
 } 
-
-.project {
-  cursor: pointer;
-}
-
 
 /* ------------ SERVICE SECTION ------------- */
 .features {
@@ -1019,4 +1018,156 @@ height: 100%;
     padding: 0;
     text-align: center
   }
+}
+
+/* --------------------- work page ------------- */
+.container-work {
+  margin-bottom: 400px;
+}
+
+.container-work .content-w3 {
+  top:-280%
+}
+
+.container .text-footer {
+  text-align: center;
+  color: gray
+}
+
+@media (max-width: 950px) {
+  .content-w1{
+    top: 32%;
+    left: 32.5%;
+  }
+
+  .content-w2 {
+    left: 10%;
+    top: 10%
+  }
+
+  .content-w3 {
+    left: 5%;
+    top: -220%;
+    font-size: 15px
+  }
+
+  .content-w4 {
+    left: 9%;
+    top: 50%;
+    font-size: 15px
+  }
+
+  .content-w5 {
+    left: 7%;
+    top: 25%;
+    font-size: 15px
+  }
+
+  .content-w6 {
+    left: -31%;
+    top: 25%;
+  }
+}
+
+@media (max-width:560px) {
+  .footer-work {
+    position: fixed;
+  }
+}
+
+/* ------------- projects pages -------------------- */
+.project-container {
+  width: 90%;
+  max-width: 1349px;
+  height: 1200px;
+  background: #0f0f0f;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto) 500px 40px;
+  grid-template-areas: 
+    "projectName projectName projectName"
+    "detail started completed"
+    "descrip descrip descrip"
+    "img-big img-big img-sm"
+    "previous next next"; 
+    grid-gap: 0 30px;
+    margin: auto ;
+    margin-bottom: 400px;
+}
+
+.text-product {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.projectName {
+  padding: 120px 0 30px 0;
+  grid-area: projectName;
+  text-align: left;
+  font-size: 2.5em;
+  margin-left: 20px;
+}
+
+.text-sub {
+  text-align: left
+}
+
+.text-sub p {
+  color: gray
+}
+ 
+.word-description p {
+  color: gray;
+  line-height: 36px;
+  padding-bottom: 20px
+}
+
+.details {
+  grid-area: detail;
+}
+
+.started {
+  grid-area: started;
+}
+
+.completed {
+  grid-area: completed;
+}
+
+.word-description {
+  grid-area: descrip
+}
+
+.img-big {
+  grid-area: img-big;
+  background: url(./src/images/projects/artboard_copy_14_2x.png)
+}
+
+.img-sm{
+  grid-area: img-sm;
+  background: url(./src/images/projects/artboard_copy_14_2x.png) center center;
+  background: cover
+}
+
+.left-arrow {
+  grid-area: previous;
+  text-align: start
+}
+
+.right-arrow {
+  grid-area: next;
+  text-align: end
+}
+
+.arrow {
+  padding: 30px;
+  color: gray;
+  cursor: pointer
+}
+
+.project-container .arrow:hover {
+  color: rgba(56, 228, 255, 1)
 }
