@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Antic+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
 
 html, body {
   margin: 0;
@@ -270,11 +271,6 @@ p.scrollMe {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 2px
-}
-
-.container h2 span {
-  color: yellow;
-  font-weight: bold;
 }
 
 .project-section {
@@ -1029,11 +1025,6 @@ height: 100%;
   top:-280%
 }
 
-.container .text-footer {
-  text-align: center;
-  color: gray
-}
-
 @media (max-width: 950px) {
   .content-w1{
     top: 32%;
@@ -1283,4 +1274,27 @@ height: 100%;
 
 .title-6 {
   color: #161355
+}
+
+/* ------------------ about -------------- */
+
+.container-work .about img {
+  padding-top: 90px;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.container-work .paragraph {
+  color: gray;
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+
+.container-work .paragraph h2{
+  color: #fff;
+  font-family: 'Bad Script', cursive;
+  font-weight: lighter
 }
