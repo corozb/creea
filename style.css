@@ -1063,7 +1063,42 @@ height: 100%;
   .footer-work {
     position: fixed;
   }
+
+  .container-work {
+    height: 1500px;
+  }
+
+  .content-w1{
+    top: 20%;
+    left: 32.5%;
+  }
+
+  .content-w2 {
+    left: 13%;
+    top: 5%
+  }
+
+  .content-w3 {
+    left: 50%;
+    top: -75%;
+  }
+
+  .content-w4 {
+    left: 50%;
+    top: 5%;
+  }
+
+  .content-w5 {
+    left: 50%;
+    top: 5%;
+  }
+
+  .content-w6 {
+    left: -20%;
+    top: 5%;
+  }
 }
+
 
 /* ------------- projects pages -------------------- */
 .project-container {
@@ -1384,4 +1419,73 @@ height: 100%;
 .sent-btn:hover {
   background: rgba(56, 228, 255, 1);
   color: white;
+}
+
+.team-section i.fas {
+  color: rgba(56, 228, 255, 1);
+  font-size: 25px;
+  display: inline-flex
+}
+
+.team-section i.fas::before {
+  padding: 10px;
+}
+
+.info h3 {
+  margin: 0;
+}
+
+.info p {
+  margin: -7px 0 20px 0;
+  padding-left: 55px;
+}
+
+@media (max-width: 950px) {
+.container-contact {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30% 150px;
+  grid-template-areas: 
+  "info info info"
+  "contact-box contact-box contact-box2"
+}
+
+.info {
+  text-align: center
+}
+
+ .info {
+   display: inline-flex;
+   border-right: 2px solid transparent;
+   padding-left: 0;
+ }
+
+ .sent-btn {
+   width: 80%
+ }
+}
+
+@media (max-width: 560px) {
+  .container-contact {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "contact-box"
+    "contact-box2"
+    "info";
+    align-self: center;
+    padding-top: 100px;
+  }
+
+  .info {
+    padding-top: 40px;
+  }
+
+  .sent-btn {
+    width: 90%
+  }
+
+  .container-form {
+    height: 180px;
+    background: #0f0f0f;
+  }
+
 }
