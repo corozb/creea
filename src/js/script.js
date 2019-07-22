@@ -44,3 +44,21 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination'
   },
 });
+
+// TweenMax animation in nav :
+// TweenMax.from('class or id', animation-duration, which properties we want to animate ) 
+TweenMax.from('.logo', 1.5, {
+  delay: 0.4,
+  y: 30,
+  opacity: 0,
+  ease: Bounce.easeOut
+})
+
+TweenMax.staggerFrom('.menu li a', 1, {
+  delay:0.4,
+  opacity: 0,
+  ease: Expo.easeInOut
+}, 0,1)
+
+// wow animation with scroll down
+new WOW().init()
