@@ -181,6 +181,21 @@ a:before {
   transform: translateY(-50%);
 }
 
+.anim-typing {
+  animation: 
+    typewriter 2s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;   
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20em;
+  }
+}
+
 .rocks-1 {
   width: 50%;
   margin-top: 61px;
@@ -489,7 +504,7 @@ transition: 0.5s;
 border-radius: 6px;
 box-sizing: border-box;
 box-shadow: -10px 25px 50px rgba(0, 0, 0, .2);
-cursor: pointer;
+/* cursor: pointer; */
 }
 
 .features .box:hover {
@@ -556,7 +571,7 @@ height: 100%;
 .boxcard {
   display: grid;
   padding: 48px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .work-feature .title {
