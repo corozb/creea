@@ -11,6 +11,7 @@ To buil it I use diferentes tools like:
 - HTML5 - CSS3 - JAVASCRIPT
 - jQuery
 - CSS GRID LAYOUT
+- SASS
 - Parallax - Rellax.js
 - swiper.js
 - TweenMax.js
