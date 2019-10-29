@@ -1,6 +1,6 @@
 // Menu toggle-button
 $(document).ready(function() {
-  $(".menu-icon").on("click", function(){
+  $(".header__burger-icon").on("click", function(){
     $("nav ul").toggleClass("showing");
   })
 })
@@ -16,8 +16,8 @@ $(window).on("scroll", function() {
 })
 
 // Menu burger
-$("#wrapper").click( function() {
-	$(".menu-icon").toggleClass("close");
+$(".header__burger").click( function() {
+	$(".header__burger-icon").toggleClass("close");
 });
 
 // Parallax effects
@@ -47,14 +47,14 @@ const swiper = new Swiper('.swiper-container', {
 
 // TweenMax animation in nav :
 // TweenMax.from('class or id', animation-duration, which properties we want to animate ) 
-TweenMax.from('.logo', 1.5, {
+TweenMax.from("#header", 1.5, {
   delay: 0.4,
   y: 30,
   opacity: 0,
   ease: Bounce.easeOut
 })
 
-TweenMax.staggerFrom('.menu li a', 1, {
+TweenMax.staggerFrom('.header__menu li a', 1, {
   delay:0.4,
   opacity: 0,
   ease: Expo.easeInOut
