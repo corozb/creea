@@ -362,16 +362,19 @@ p.scrollMe {
 }
 
 .projects__text {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.4px;
+  color: #fff;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
   margin: 0;
   padding: 40px 0 20px 70px;
   text-align: left;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
 }
 
-.project-section {
+.projects__section {
+  cursor: pointer;
   width: 90%;
   max-width: 1349px;
   height: 878px;
@@ -382,23 +385,76 @@ p.scrollMe {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[4];
       grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: "project1 project1 project2 project2" "project1 project1 project3 project4" "project5 project6 project6 project4" "project5 project6 project6 project4";
+      grid-template-areas: "p1 p1 p2 p2" "p1 p1 p3 p4" "p5 p6 p6 p4" "p5 p6 p6 p4";
   margin: auto;
 }
 
-.project1 {
+.projects__section-p1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: project1;
-  background: url(../images/projects/artboard_copy_14_2x.png) center center;
+  grid-area: p1;
+  background: url(../images/projects/artboard_copy_14_2x.png) no-repeat 50% 50%;
   background-size: cover;
-  position: relative;
 }
 
-.overlay {
-  position: absolute;
+.projects__section-p2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: p2;
+  background: url(../images/projects/dribbble_dribbble_mar_vir_portfolio_26.06.19.gif) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.projects__section-p3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: p3;
+  background: url(../images/projects/iphone_x-xs___3_2x.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.projects__section-p4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: p4;
+  background: url(../images/projects/miracleherbs_100.png) center center;
+  background-size: cover;
+}
+
+.projects__section-p5 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: p5;
+  background: url(../images/projects/artboard_3_copy_3.png) center center;
+  background-size: cover;
+}
+
+.projects__section-p6 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: p6;
+  background: url(../images/projects/dribbble.gif) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.projects__section .overlay {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -406,166 +462,64 @@ p.scrollMe {
   transition: .5s ease;
 }
 
-.project:hover .overlay, .project3:hover .overlayFade {
-  opacity: .8;
+.projects__section .content {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.4px;
+  color: #fff;
 }
 
-.content {
-  position: absolute;
-  top: 33%;
-  left: 37.5%;
+.projects__section .content a {
   font-size: 20px;
-  text-align: center;
-}
-
-.content a {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   color: #fff;
   text-decoration: none;
 }
 
-.icon-projects {
+.projects__section .content i {
   font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
 }
 
-.content h3 {
+.projects__section .content h3 {
   margin-bottom: 0;
 }
 
-.text-descrip {
-  text-decoration: none;
-  color: #fff;
+.projects__section .content p {
   font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.40625rem;
 }
 
-.overlayRight {
-  height: 100%;
-  /* width: 0; */
-  top: 0;
-  right: 0;
+.projects__section-p1:hover .overlay {
   background: #0ED8D7;
+  opacity: .8;
 }
 
-.project:hover .overlayRight {
-  width: 100%;
-}
-
-.project2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: project2;
-  background: url(../images/projects/dribbble_dribbble_mar_vir_portfolio_26.06.19.gif) center center;
-  background-size: cover;
-}
-
-.content-p2 {
-  top: 8%;
-  left: 27.2%;
-}
-
-.overlayBottom {
-  width: 607.031px;
-  height: 219.5px;
-}
-
-.project2:hover {
+.projects__section-p2:hover .overlay {
   background: #C3A3AB;
+  opacity: .8;
 }
 
-.project2:hover .overlayBottom {
-  height: 100%;
-}
-
-.project3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: project3;
-  background: url(../images/projects/iphone_x-xs___3_2x.png) center center;
-  background-size: cover;
-}
-
-.content-p3 {
-  top: -60%;
-  left: 23%;
-}
-
-.overlayFade {
-  width: 303.52px;
-  height: 219.5px;
-  top: 177%;
-}
-
-.project3:hover {
+.projects__section-p3:hover .overlay {
   background: #4F2BFF;
+  opacity: .8;
 }
 
-.project4 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 4;
-  grid-area: project4;
-  background: url(../images/projects/miracleherbs_100.png) center center;
-  background-size: cover;
+.projects__section-p4:hover .overlay {
+  background: #C3A3AB;
+  opacity: .9;
 }
 
-.content-p4 {
-  top: 45%;
-  left: 26%;
-}
-
-.overlayLeft {
-  width: 303.5px;
-  height: 658.5px;
-}
-
-.project4:hover {
-  background: #E4BEB5;
-}
-
-.project4:hover .overlayLeft, .project:hover .overlayLeft {
-  height: 100%;
-}
-
-.project5 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: project5;
-  background: url(../images/projects/artboard_3_copy_3.png) center center;
-  background-size: cover;
-}
-
-.content-p5 {
-  top: 28%;
-  left: 26%;
-}
-
-.overlayLeft {
-  width: 303.5px;
-  height: 439px;
-}
-
-.project5:hover {
+.projects__section-p5:hover .overlay {
   background: #080808;
+  opacity: .8;
 }
 
-.project6 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: project6;
-  background: url(../images/projects/dribbble.gif) center center;
-  background-size: cover;
-}
-
-.content-p6 {
-  top: 25%;
-  right: -200px;
-}
-
-.project6:hover {
+.projects__section-p6:hover .overlay {
   background: #161355;
+  opacity: .8;
 }
 
 /* ------------ SERVICE SECTION ------------- */
@@ -1338,32 +1292,16 @@ p.scrollMe {
     font-size: 1.75rem;
     line-height: 2.625rem;
   }
-  .content-p1 {
-    top: 17%;
-    left: 32.5%;
+  .projects {
+    height: 2600px;
   }
-  .content-p2 {
-    left: 5%;
-    top: 5%;
-  }
-  .content-p3 {
-    left: 3%;
-    top: -40%;
-    font-size: 15px;
-  }
-  .content-p4 {
-    left: 5px;
-    top: 50%;
-    font-size: 15px;
-  }
-  .content-p5 {
-    left: 2%;
-    top: 25%;
-    font-size: 15px;
-  }
-  .content-p6 {
-    left: 29%;
-    top: 25%;
+  .projects__section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (400px)[6];
+        grid-template-rows: repeat(6, 400px);
+    grid-gap: 10px;
+        grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
   }
   .features .box {
     margin-bottom: 30px;
@@ -1502,32 +1440,11 @@ p.scrollMe {
     line-height: 1.875rem;
   }
   .projects {
-    height: 1300px;
+    height: 1700px;
   }
-  .project-section {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .projects__section {
     -ms-grid-rows: (250px)[6];
         grid-template-rows: repeat(6, 250px);
-    grid-gap: 10px;
-        grid-template-areas: "project1" "project2" "project3" "project4" "project5" "project6";
-  }
-  .content {
-    left: 50%;
-    top: 5%;
-    font-size: 20px;
-  }
-  .content-p1 {
-    top: 17%;
-    left: 32.5%;
-  }
-  .content-p2 {
-    left: 13%;
-    top: 5%;
-  }
-  .content-p3 {
-    left: 44%;
-    top: 17%;
   }
   .features .box {
     margin-bottom: 30px;
