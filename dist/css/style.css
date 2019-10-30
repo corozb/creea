@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Antic+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap");
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
-=======
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:500&display=swap");
->>>>>>> 8e4a82d67c9ddaa6bd41da60b97c44401c32c6b5
 html, body {
   margin: 0;
   padding: 0;
@@ -109,17 +105,11 @@ html, body {
 }
 
 .header__menu {
-<<<<<<< HEAD
   font-family: "Rubik", sans-serif;
   letter-spacing: -0.4px;
   color: #fff;
   right: 80px;
   position: fixed;
-=======
-  right: 80px;
-  position: fixed;
-  font-family: "Work Sans", sans-serif;
->>>>>>> 8e4a82d67c9ddaa6bd41da60b97c44401c32c6b5
   list-style: none;
   overflow: hidden;
   -webkit-transition: 1s;
@@ -136,10 +126,6 @@ html, body {
   font-weight: 300;
   line-height: 40px;
   position: relative;
-<<<<<<< HEAD
-=======
-  letter-spacing: 2px;
->>>>>>> 8e4a82d67c9ddaa6bd41da60b97c44401c32c6b5
 }
 
 .header__menu li a {
@@ -209,20 +195,13 @@ a:before {
 }
 
 h1 {
-<<<<<<< HEAD
   font-family: "Antic Slab", serif;
   color: #fff;
-=======
->>>>>>> 8e4a82d67c9ddaa6bd41da60b97c44401c32c6b5
   position: absolute;
   display: block;
   font-weight: lighter;
   letter-spacing: 1px;
   text-transform: uppercase;
-<<<<<<< HEAD
-=======
-  color: #fff;
->>>>>>> 8e4a82d67c9ddaa6bd41da60b97c44401c32c6b5
   left: 10vw;
   bottom: 50%;
   margin: 0 auto 20px;
@@ -382,17 +361,10 @@ p.scrollMe {
   background: #0f0f0f;
 }
 
-<<<<<<< HEAD
 .projects__text {
   margin: 0;
   padding: 40px 0 20px 70px;
   text-align: left;
-=======
-.project-text {
-  margin: 0;
-  padding: 90px 71px 20px 0;
-  text-align: right;
->>>>>>> 8e4a82d67c9ddaa6bd41da60b97c44401c32c6b5
   color: #fff;
   font-size: 18px;
   font-weight: 300;
@@ -1533,19 +1505,12 @@ p.scrollMe {
     height: 1300px;
   }
   .project-section {
-<<<<<<< HEAD
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: (250px)[6];
         grid-template-rows: repeat(6, 250px);
     grid-gap: 10px;
         grid-template-areas: "project1" "project2" "project3" "project4" "project5" "project6";
-=======
-    -ms-grid-rows: (20%)[6];
-        grid-template-rows: repeat(6, 20%);
-    grid-gap: 10px;
-        grid-template-areas: "project1 project1 project1 project1" "project2 project2 project2 project2" "project3 project3 project3 project3" "project4 project4 project4 project4" "project5 project5 project5 project5" "project6 project6 project6 project6";
->>>>>>> 8e4a82d67c9ddaa6bd41da60b97c44401c32c6b5
   }
   .content {
     left: 50%;
