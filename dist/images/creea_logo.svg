@@ -1,0 +1,21 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="svg3032" viewBox="0 0 1024 768" height="768px" width="1024px" version="1.1">
+  <metadata id="metadata3038">
+    <rdf:rdf>
+      <cc:work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:work>
+    </rdf:rdf>
+  </metadata>
+  <defs id="defs3036"/>
+  <g id="logo-group">
+    <g id="title" style="font-style:normal;font-weight:300;font-size:72px;line-height:1;font-family:'Montserrat Light Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" aria-label="CREEA">
+      <path id="path3040" style="font-style: normal; font-weight: 300; font-size: 72px; line-height: 1; font-family: &quot;Montserrat Light Alt1&quot;; font-variant-ligatures: none; text-align: center; text-anchor: middle; fill: rgb(242, 242, 242);" d="m 403.33681,117.048 c 3.96,2.232 8.424,3.312 13.392,3.312 3.6,0 6.912,-0.576 10.008,-1.8 3.096,-1.152 5.76,-2.952 7.92,-5.256 l -2.304,-2.376 c -4.104,4.032 -9.288,6.048 -15.48,6.048 -4.248,0 -8.064,-0.936 -11.52,-2.88 -3.456,-1.872 -6.192,-4.536 -8.136,-7.92 -2.016,-3.384 -2.952,-7.2 -2.952,-11.376 0,-4.176 0.936,-7.92 2.952,-11.304 1.944,-3.384 4.68,-6.048 8.136,-7.992 3.456,-1.872 7.272,-2.88 11.52,-2.88 6.264,0 11.448,2.016 15.48,5.976 l 2.304,-2.376 c -2.16,-2.304 -4.824,-4.032 -7.848,-5.184 -3.096,-1.152 -6.48,-1.8 -10.08,-1.8 -4.968,0 -9.432,1.152 -13.392,3.312 -3.96,2.232 -7.056,5.256 -9.36,9.144 -2.304,3.888 -3.384,8.28 -3.384,13.104 0,4.896 1.08,9.216 3.384,13.104 2.304,3.888 5.4,6.984 9.36,9.144 z" transform="translate(0 213.64) translate(245.59125000000006 119.24) scale(2) translate(-390.59281 -69.24)"/>
+      <path id="path3042" style="font-style: normal; font-weight: 300; font-size: 72px; line-height: 1; font-family: &quot;Montserrat Light Alt1&quot;; font-variant-ligatures: none; text-align: center; text-anchor: middle; fill: rgb(242, 242, 242);" d="m 473.59419,102.36 c 3.744,-1.08 6.696,-2.952 8.712,-5.688 2.016,-2.736 3.096,-6.048 3.096,-10.08 0,-5.256 -1.8,-9.432 -5.4,-12.456 -3.6,-3.024 -8.568,-4.536 -14.904,-4.536 h -18.072 v 3.312 h 18.072 c 5.328,0 9.432,1.224 12.312,3.6 2.808,2.376 4.248,5.76 4.248,10.08 0,4.392 -1.44,7.776 -4.248,10.152 -2.88,2.376 -6.984,3.528 -12.312,3.528 h -18.072 V 120 h 3.672 v -16.488 h 14.4 c 1.44,0 3.096,-0.072 4.896,-0.36 l 12.024,16.848 h 4.176 z" transform="translate(0 213.64) translate(368.45801 119.96) scale(2) translate(-447.02619 -69.6)"/>
+      <path id="path3044" style="font-style: normal; font-weight: 300; font-size: 72px; line-height: 1; font-family: &quot;Montserrat Light Alt1&quot;; font-variant-ligatures: none; text-align: center; text-anchor: middle; fill: rgb(200, 231, 243);" d="m 531.53281,92.784 h -32.616 v 3.24 h 32.616 z m 0,-23.184 h -32.616 v 3.312 h 32.616 z m -32.616,47.088 V 120 h 32.616 v -3.312 z" transform="translate(0 213.64) translate(482.23925 119.96) scale(2) translate(-498.91681 -69.6)"/>
+      <path id="path3046" style="font-style: normal; font-weight: 300; font-size: 72px; line-height: 1; font-family: &quot;Montserrat Light Alt1&quot;; font-variant-ligatures: none; text-align: center; text-anchor: middle; fill: rgb(163, 222, 245);" d="m 579.76719,92.784 h -32.616 v 3.24 h 32.616 z m 0,-23.184 h -32.616 v 3.312 h 32.616 z m -32.616,47.088 V 120 h 32.616 v -3.312 z" transform="translate(0 213.64) translate(588.7080100000001 119.96) scale(2) translate(-547.15119 -69.6)"/>
+      <path id="path3048" style="font-style: normal; font-weight: 300; font-size: 72px; line-height: 1; font-family: &quot;Montserrat Light Alt1&quot;; font-variant-ligatures: none; text-align: center; text-anchor: middle; fill: rgb(121, 211, 246);" d="m 613.81756,69.6 h -3.672 l -23.184,50.4 h 3.96 l 21.024,-46.368 21.096,46.368 h 3.96 z" transform="translate(0 213.64) translate(678.3287499999999 119.96) scale(2) translate(-586.96156 -69.6)"/>
+    </g>
+    <g id="tagline" style="font-style:normal;font-weight:400;font-size:32px;line-height:1;font-family:Montserrat;font-variant-ligatures:none;text-align:center;text-anchor:middle"/>
+  </g>
+</svg>
