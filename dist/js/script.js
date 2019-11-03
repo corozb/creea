@@ -28,7 +28,7 @@ const rellax = new Rellax('.rellax-effect', {
 
 
 // Swiper Team Section
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.team__swiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
@@ -38,10 +38,10 @@ const swiper = new Swiper('.swiper-container', {
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows: true,
+    slideShadows : true,
   },
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
   },
 });
 
