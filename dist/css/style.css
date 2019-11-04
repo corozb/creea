@@ -775,7 +775,7 @@ p.scrollMe {
   background: #0f0f0f;
 }
 
-.footer-container {
+.footer__container {
   width: 90%;
   max-width: 1200px;
   height: 400px;
@@ -789,19 +789,7 @@ p.scrollMe {
   margin: auto;
 }
 
-.text-footer {
-  color: #fff;
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-
-.title-footer {
-  color: gray;
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-
-.collab {
+.footer__container .collab {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -810,7 +798,7 @@ p.scrollMe {
   padding-top: 60px;
 }
 
-.hr {
+.footer__container .hr {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -822,34 +810,65 @@ p.scrollMe {
       align-self: center;
 }
 
-.footer-box {
+.footer__container-text {
+  font-family: "Antic Slab", serif;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  letter-spacing: 2px;
+}
+
+.footer__container-title {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.4px;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: gray;
+}
+
+.footer__container-box {
   padding: 30px;
 }
 
-.connect {
+.footer-connect {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: connect;
 }
 
-.follow {
+.footer-follow {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: follow;
   text-align: center;
 }
 
-.follow ul {
+.footer-follow ul {
   list-style: none;
   padding-left: 0;
 }
 
-.follow ul li {
+.footer-follow ul li {
   display: inline-block;
   padding-left: 20px;
 }
 
-.circle-social::before {
+.footer-email {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: contact;
+  text-align: right;
+}
+
+.footer-follow a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .circle-social::before {
   display: inline-block;
   content: '';
   border-radius: 100%;
@@ -858,32 +877,20 @@ p.scrollMe {
   margin-right: 6px;
 }
 
-.fb::before {
+.footer .fb::before {
   background: #4267B2;
 }
 
-.yt::before {
+.footer .yt::before {
   background: #FF0000;
 }
 
-.tw::before {
+.footer .tw::before {
   background: #1DA1F2;
 }
 
-.in::before {
+.footer .in::before {
   background: #0077B5;
-}
-
-.email {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: contact;
-  text-align: right;
-}
-
-.follow a {
-  text-decoration: none;
-  color: #fff;
 }
 
 /* --------------------- work page ------------- */
@@ -1428,7 +1435,7 @@ p.scrollMe {
   .services__box {
     margin-bottom: 30px;
   }
-  .footer-container {
+  .footer__container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 2% 15% (100px)[3];
@@ -1436,11 +1443,11 @@ p.scrollMe {
         grid-template-areas: "title-footer " "hr" "connect" "follow" "contact";
     height: 100vh;
   }
-  .collab {
+  .footer__container .collab {
     text-align: center;
     padding: 0;
   }
-  .footer-box {
+  .footer__container-box {
     top: 0;
     padding: 0;
     text-align: center;
