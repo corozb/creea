@@ -903,7 +903,7 @@ p.scrollMe {
   padding-top: 10rem;
 }
 
-.projects-work p {
+.projects-work .paragraph {
   font-family: "Antic Slab", serif;
   color: #fff;
   font-size: 20px;
@@ -1113,22 +1113,29 @@ p.scrollMe {
 }
 
 /* ------------------ about -------------- */
-.container-work .about img {
-  padding-top: 90px;
-  width: 80%;
-  display: block;
-  margin: auto;
+.projects__about {
+  margin-bottom: 400px;
 }
 
-.container-work .paragraph {
+.projects__about-picture img {
+  width: 100%;
+}
+
+.projects__about .paragraph {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   color: gray;
   text-align: center;
-  font-size: 18px;
   line-height: 36px;
   letter-spacing: 2px;
 }
 
-.container-work .paragraph h3 {
+.projects__about .paragraph-title {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.4px;
+  color: #fff;
+  margin-top: 3rem;
   color: #fff;
   font-weight: lighter;
 }
@@ -1324,6 +1331,9 @@ p.scrollMe {
   .projects-work {
     height: 178rem;
   }
+  .projects__about {
+    height: 50rem;
+  }
   .container-contact {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -1444,6 +1454,9 @@ p.scrollMe {
   }
   .projects-work {
     height: 1984px;
+  }
+  .projects__about {
+    height: 50rem;
   }
   .work-container {
     height: 1500px;
