@@ -708,6 +708,7 @@ p.scrollMe {
 .team__swiper {
   width: 100%;
   padding-bottom: 70px;
+  overflow: hidden;
 }
 
 .team .swiper-slide {
@@ -894,12 +895,25 @@ p.scrollMe {
 }
 
 /* --------------------- work page ------------- */
-.container-work {
+.projects-work {
   margin-bottom: 400px;
 }
 
-.container-work .content-w3 {
-  top: -280%;
+.projects-work h2 {
+  padding-top: 10rem;
+}
+
+.projects-work p {
+  font-family: "Antic Slab", serif;
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: gray;
+  line-height: 36px;
+  letter-spacing: 2px;
+  padding: 2rem;
 }
 
 .project-container {
@@ -1307,32 +1321,8 @@ p.scrollMe {
   .feature .feat-2 {
     border-bottom: 2px solid transparent;
   }
-  .content-w1 {
-    top: 32%;
-    left: 32.5%;
-  }
-  .content-w2 {
-    left: 10%;
-    top: 10%;
-  }
-  .content-w3 {
-    left: 5%;
-    top: -220%;
-    font-size: 15px;
-  }
-  .content-w4 {
-    left: 9%;
-    top: 50%;
-    font-size: 15px;
-  }
-  .content-w5 {
-    left: 7%;
-    top: 25%;
-    font-size: 15px;
-  }
-  .content-w6 {
-    left: -31%;
-    top: 25%;
+  .projects-work {
+    height: 178rem;
   }
   .container-contact {
     -ms-grid-columns: (1fr)[3];
@@ -1452,37 +1442,10 @@ p.scrollMe {
     padding: 0;
     text-align: center;
   }
-  .footer-work {
-    position: fixed;
+  .projects-work {
+    height: 1984px;
   }
-  .container-work {
-    height: 1500px;
-  }
-  .content-w1 {
-    top: 20%;
-    left: 32.5%;
-  }
-  .content-w2 {
-    left: 13%;
-    top: 5%;
-  }
-  .content-w3 {
-    left: 50%;
-    top: -75%;
-  }
-  .content-w4 {
-    left: 50%;
-    top: 5%;
-  }
-  .content-w5 {
-    left: 50%;
-    top: 5%;
-  }
-  .content-w6 {
-    left: -20%;
-    top: 5%;
-  }
-  .project-container {
+  .work-container {
     height: 1500px;
   }
   .text-product {
