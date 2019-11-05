@@ -1,24 +1,54 @@
 // Menu toggle-button
-$(document).ready(function() {
-  $(".header__burger-icon").on("click", function(){
-    $("nav ul").toggleClass("showing");
-  })
+const $burgerIcon = document.querySelector('.header__burger-icon')
+const $headerBurger = document.querySelector('.header__burger')
+const $headerMenu = document.querySelector('.header__menu')
+const $header = document.querySelector('.header')
+
+$burgerIcon.addEventListener('click', () => {
+  $headerMenu.classList.toggle("showing")
+})
+
+$headerBurger.addEventListener('click', () => {
+  $burgerIcon.classList.toggle("close")
 })
 
 // Scrolling Effect
-$(window).on("scroll", function() {
-  if($(window).scrollTop()) {
-    $('nav').addClass('black');
+window.addEventListener('scroll', ()=> {
+  if (window.pageYOffset) {
+    $header.classList.add('black')
   }
   else {
-    $('nav').removeClass('black');
+    $header.classList.remove('black')
   }
 })
 
+
+
+// In jQuery:
+// Menu toggle-button
+// $(document).ready(function() {
+//   $(".header__burger-icon").on("click", function(){
+//     $("nav ul").toggleClass("showing");
+//   })
+// })
+
 // Menu burger
-$(".header__burger").click( function() {
-	$(".header__burger-icon").toggleClass("close");
-});
+// $(".header__burger").click( function() {
+// 	$(".header__burger-icon").toggleClass("close");
+// });
+
+// Scrolling Effect
+// $(window).on("scroll", function() {
+//   if($(window).scrollTop()) {
+//     $('nav').addClass('black');
+//   }
+//   else {
+//     $('nav').removeClass('black');
+//   }
+// })
+
+
+
 
 // Parallax effects
 const rellax = new Rellax('.rellax-effect', {
