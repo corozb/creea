@@ -9,7 +9,6 @@ You can [See it](https://corozb.github.io/creea/)
 
 To buil it I use diferentes tools like:
 - HTML5 - CSS3 - JAVASCRIPT
-- jQuery
 - CSS GRID LAYOUT
 - SASS
 - Parallax - Rellax.js
