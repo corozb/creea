@@ -194,21 +194,6 @@ a:before {
   overflow: hidden;
 }
 
-h1 {
-  font-family: "Antic Slab", serif;
-  color: #fff;
-  position: absolute;
-  display: block;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  left: 10vw;
-  bottom: 50%;
-  margin: 0 auto 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .cursor {
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   width: 20em;
@@ -221,6 +206,18 @@ h1 {
 }
 
 .anim-typing {
+  font-family: "Antic Slab", serif;
+  color: #fff;
+  position: absolute;
+  display: block;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  left: 10vw;
+  bottom: 50%;
+  margin: 0 auto 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-animation: typewriter 2s steps(40) 1s 1 normal both, blinkCursor 1s steps(20) infinite normal;
           animation: typewriter 2s steps(40) 1s 1 normal both, blinkCursor 1s steps(20) infinite normal;
 }
@@ -916,7 +913,14 @@ p.scrollMe {
   padding: 2rem;
 }
 
-.project-container {
+.projects-details {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: #fff;
+}
+
+.project__container {
   width: 90%;
   max-width: 1349px;
   height: 1200px;
@@ -933,92 +937,79 @@ p.scrollMe {
   margin-bottom: 400px;
 }
 
-.text-product {
-  margin: 0;
+.project__container-name {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.4px;
   color: #fff;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
-
-.projectName {
-  padding: 120px 0 30px 0;
+  font-size: 50px;
+  font-size: 3.125rem;
+  line-height: 4.6875rem;
+  padding: 120px 0 30px 20px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: projectName;
-  text-align: left;
-  font-size: 2.5em;
-  margin-left: 20px;
 }
 
-.title-1 {
-  color: #0ED8D7;
-}
-
-.text-sub {
-  text-align: left;
-}
-
-.text-sub p {
-  color: gray;
-}
-
-.word-description p {
-  color: gray;
-  line-height: 36px;
-  padding-bottom: 20px;
-}
-
-.details {
+.project__container .details {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: detail;
 }
 
-.started {
+.project__container .started {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: started;
 }
 
-.completed {
+.project__container .completed {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: completed;
 }
 
-.word-description {
+.project__container .project__container-description {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: descrip;
 }
 
-.img-big {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: img-big;
-  background: url(../images/projects/artboard_copy_14_2x.png);
+.project__container-text {
+  text-align: left;
 }
 
-.img-sm {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-  grid-area: img-sm;
-  background: url(../images/projects/vrexperience.jpg) top center;
-  background: cover;
+.project__container-text p {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.4px;
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: gray;
 }
 
-.left-arrow {
+.project__container-description {
+  font-family: "Antic Slab", serif;
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: gray;
+  line-height: 36px;
+  letter-spacing: 2px;
+  padding-bottom: 3rem;
+}
+
+.project__container .left-arrow {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: previous;
   text-align: start;
 }
 
-.right-arrow {
+.project__container .right-arrow {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -1026,29 +1017,53 @@ p.scrollMe {
   text-align: end;
 }
 
-.arrow {
+.project__container-arrow {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.4px;
+  color: #fff;
   padding: 30px;
   cursor: pointer;
 }
 
-.arrow a {
+.project__container-arrow a {
   text-decoration: none;
   color: gray;
   font-size: 18px;
   letter-spacing: 2px;
 }
 
-.project-container .arrow a:hover {
+.project__container-arrow a:hover {
+  color: #38e4ff;
+}
+
+/* ------------ Hollywood VR ------------- */
+.img-big {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img-big;
+  background: url(../images/projects/artboard_copy_14_2x.png) no-repeat;
+}
+
+.img-sm {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: img-sm;
+  background: url(../images/projects/vrexperience.jpg) top center no-repeat;
+  background: cover;
+}
+
+.title-1 {
   color: #38e4ff;
 }
 
 /* ------------ Marcos Florentino & Kevin ------------- */
 .image-p2 {
-  background: url(../images/projects/dribbble_dribbble_mar_vir_portfolio_26.06.19.gif);
+  background: url(../images/projects/dribbble_dribbble_mar_vir_portfolio_26.06.19.gif) no-repeat;
 }
 
 .sm-image-p2 {
-  background: url(../images/projects/marcos-florentino-kevin.jpg) top center;
+  background: url(../images/projects/marcos-florentino-kevin.jpg) top center no-repeat;
   background: cover;
 }
 
@@ -1058,11 +1073,11 @@ p.scrollMe {
 
 /* --------- Creative Agency ------------ */
 .image-p3 {
-  background: url(../images/projects/iphone_x-xs___3_2x.png);
+  background: url(../images/projects/iphone_x-xs___3_2x.png) no-repeat;
 }
 
 .sm-image-p3 {
-  background: url(../images/projects/creative.jpg) center center;
+  background: url(../images/projects/creative.jpg) center center no-repeat;
   background: cover;
 }
 
@@ -1072,11 +1087,11 @@ p.scrollMe {
 
 /* ------------ Miracle Herbs -------------- */
 .image-p4 {
-  background: url(../images/projects/miracleherbs.png);
+  background: url(../images/projects/miracleherbs.png) 13% 10% no-repeat;
 }
 
 .sm-image-p4 {
-  background: url(../images/projects/miracleherbs_100.png) center center;
+  background: url(../images/projects/miracleherbs_100.png) 8% 29% no-repeat;
   background: cover;
 }
 
@@ -1086,25 +1101,25 @@ p.scrollMe {
 
 /* ------------ Music App -------------- */
 .image-p5 {
-  background: url(../images/projects/music_app.png);
+  background: url(../images/projects/music_app.png) no-repeat;
 }
 
 .sm-image-p5 {
-  background: url(../images/projects/artboard_3_copy_2.png) center center;
+  background: url(../images/projects/artboard_3_copy_2.png) no-repeat center center;
   background: cover;
 }
 
 .title-5 {
-  color: #E4BEB5;
+  color: gray;
 }
 
 /* ---------------- Datatalks ---------------- */
 .image-p6 {
-  background: url(../images/projects/dribbble.gif);
+  background: url(../images/projects/dribbble.gif) 50% 50% no-repeat;
 }
 
 .sm-image-p6 {
-  background: url(../images/projects/dashboard.jpg) center center;
+  background: url(../images/projects/dashboard.jpg) 72% 14% no-repeat;
   background: cover;
 }
 
@@ -1356,6 +1371,9 @@ p.scrollMe {
   .projects__about {
     height: 54rem;
   }
+  .project__container, .projects-details {
+    height: 1603px;
+  }
   .form__wrapper {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -1460,21 +1478,15 @@ p.scrollMe {
   .projects__about {
     height: 54rem;
   }
-  .work-container {
-    height: 1500px;
+  .project__container, .projects-details {
+    height: 1892px;
   }
-  .text-product {
-    height: 1500px;
-  }
-  .projectName {
-    padding: 80px auto 5px auto;
-  }
-  .project-container {
+  .project__container {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: (1fr)[7];
-        grid-template-rows: repeat(7, 1fr);
-        grid-template-areas: "projectName projectName"  "detail detail" "started completed" "descrip descrip" "img-big img-big" "img-big img-big" "img-big img-big" "img-big img-big" "previous next";
+    -ms-grid-rows: 1fr 125px 125px (1fr)[5];
+        grid-template-rows: 1fr 125px 125px repeat(5, 1fr);
+        grid-template-areas: "projectName projectName"  "detail detail" "started completed" "descrip descrip" "img-sm img-sm" "img-sm img-sm" "img-sm img-sm" "previous next";
     grid-gap: 0;
     text-align: justify;
   }
