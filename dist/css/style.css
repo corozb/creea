@@ -1398,6 +1398,9 @@ p.scrollMe {
 
 /* -------------- mobile media query ---------------- */
 @media (max-width: 560px) {
+  body {
+    min-width: 27rem;
+  }
   nav ul {
     max-height: 0;
   }
